@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Materi Pembelajaran</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-book"></i>
+                <h1>materiku</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Beranda</a></li>
+                    <li><a href="#materi">Materi</a></li>
+                    <li><a href="#tentang">Tentang</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Belajar Lebih Mudah dengan Website Materi</h2>
+            <p>Akses materi pembelajaran kapan saja dan di mana saja</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Materi Section -->
+        <section id="materi" class="materi-section">
+            <h2><i class="fas fa-file-alt"></i> Daftar Materi</h2>
+            <div class="materi-list" id="materi-list">
+                <!-- Materi akan dimuat melalui JavaScript -->
+            </div>
+        </section>
+
+        <!-- Materi Detail -->
+        <section id="materi-detail" class="materi-detail" style="display: none;">
+            <button class="btn-back" onclick="kembaliKeDaftar()">
+                <i class="fas fa-arrow-left"></i> Kembali ke Daftar
+            </button>
+            <h2 id="detail-judul">Judul Materi</h2>
+            <div class="detail-content" id="detail-konten">
+                <!-- Konten materi akan dimuat di sini -->
+            </div>
+        </section>
+
+        <!-- Tentang Section -->
+        <section id="tentang" class="tentang-section">
+            <h2><i class="fas fa-info-circle"></i> Tentang Website</h2>
+            <p>Website ini dibuat untuk menuntaskan remedial AIJ, tentang penyampaian materi pembelajaran dari awal sampai akhir. Dapat diakses kapan saja dan di mana saja.</p>
+            <div class="fitur">
+                <div class="fitur-item">
+                    <i class="fas fa-laptop"></i>
+                    <h3>Akses Mudah</h3>
+                    <p>Dapat diakses melalui komputer atau smartphone</p>
+                </div>
+                <div class="fitur-item">
+                    <i class="fas fa-download"></i>
+                    <h3>Materi Lengkap</h3>
+                    <p>Berisi materi yang disusun secara sistematis</p>
+                </div>
+                <div class="fitur-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Fleksibel</h3>
+                    <p>Belajar sesuai dengan waktu yang tersedia</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Website Materi Pembelajaran. Dibuat dengan <i class="fas fa-heart"></i> untuk pendidikan.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
